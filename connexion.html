@@ -1,0 +1,182 @@
+<html>
+
+<head></head>
+
+<body data-app="true" style="cursor: auto;box-sizing:border-box;color:rgb(36, 37, 41);background:rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;padding-right:0px;width: 100%;display:flex;flex-direction:column;font:16px / 21.3344px Roboto, sans-serif;padding:0px;margin:0px;background-repeat:repeat;">
+    
+    <div style="box-sizing:border-box;background-color:rgb(255, 255, 255);display:flex;flex-direction:column;;width: 100%;padding:0px;margin:0px;background-repeat:no-repeat;">
+        <!---->
+        <!---->
+        <div id="cookie-banner" data-v-15a43616="" data-nosnippet="" style="box-sizing:border-box;padding-left:16px;padding-right:16px;padding:8px 16px 3px;margin:0px;background-repeat:no-repeat;background-color:rgb(246, 247, 248);border-bottom:0.666667px solid rgba(138, 150, 163, 0.25);width: calc(100% - 0px);color:rgb(138, 150, 163);position:relative;min-height:49px;padding-top:8px;padding-bottom:3px;z-index:8;transform:matrix(1, 0, 0, 1, 0, 0);">
+            <div data-v-15a43616="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;padding-right:0px;">
+                <div data-v-15a43616="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;margin-left: auto;margin-right: auto;display:flex;flex-flow:row wrap;place-content:center;align-items:center;max-width:1000px;">
+                    <div data-v-15a43616="" style="box-sizing:border-box;padding:0px;margin:6px 0px;background-repeat:no-repeat;font-size:14px;line-height:20px;margin-top:6px;margin-bottom:6px;flex: 0 0 auto;max-width:100%;">
+                        <svg data-v-15a43616="" data-icon-name="icon-cookie" aria-hidden="true" style="width: 16px;height:16px;flex:0 0 16px;display:inline-block;fill:rgb(138, 150, 163);line-height:14px;box-sizing:border-box;overflow:hidden;padding:0px;margin:0px 2px 0px 1px;background-repeat:no-repeat;vertical-align:middle;margin-right:2px;margin-left:1px;transform:matrix(1, 0, 0, 1, 0, -1);">
+                            <use href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-cookie" xlink:href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-cookie" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"></use>
+                        </svg>
+                        We use cookies to run this website. See our <a data-v-15a43616="" target="_blank" href="/cookies" style="color:#05a081;text-decoration:none solid #05a081;box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Cookie Notice</a>.
+                    </div>
+                    <div data-v-15a43616="" style="box-sizing:border-box;padding:0px;margin:6px 0px;background-repeat:no-repeat;display:flex;flex-flow:row wrap;place-content:center flex-end;align-items:center;">
+                        <button class="cookie-btn necessary-btn" type="button" style="padding:8px 16px;border-radius:1000px;color:#05a081;background-color:rgba(0, 0, 0, 0);min-width: auto;font-weight:500;border:0px none #05a081;font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:block;text-align:center;text-transform:uppercase;appearance:none;box-sizing:border-box;white-space:nowrap;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;">Only Necessary Cookies</button>
+                        <button class="cookie-btn accept-btn" type="button" style="border-radius:1000px;padding:8px 16px;min-width: auto;font-weight:500;color:rgb(254, 254, 254);font-size:14px;line-height:20px;background:#05a081 none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:block;text-align:center;text-transform:uppercase;appearance:none;box-sizing:border-box;white-space:nowrap;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px 0px 0px 4px;background-color:#05a081;border-style:none;background-repeat:repeat;margin-left:4px;">Accept All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            /* Animation pour le glissement vers le haut */
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Classe qui applique l'animation */
+.slide-up {
+    animation: slideUp 0.5s forwards;
+}
+
+/* Cacher l'élément après l'animation */
+.hide {
+    display: none;
+}
+
+        </style>
+        <script>
+            // Sélectionne la bannière de cookies et les boutons
+const cookieBanner = document.getElementById('cookie-banner');
+const necessaryBtn = document.querySelector('.necessary-btn');
+const acceptBtn = document.querySelector('.accept-btn');
+
+// Fonction pour glisser la bannière vers le haut et la cacher
+function hideCookieBanner() {
+    // Ajoute la classe qui applique l'animation
+    cookieBanner.classList.add('slide-up');
+    
+    // Cache complètement la bannière après l'animation (500ms)
+    setTimeout(() => {
+        cookieBanner.classList.add('hide');
+    }, 500);
+}
+
+// Ajoute un événement de clic pour les deux boutons
+necessaryBtn.addEventListener('click', hideCookieBanner);
+acceptBtn.addEventListener('click', hideCookieBanner);
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;display:flex;flex-direction:column;flex:1 1 0%;transform:matrix(1, 0, 0, 1, 0, 0);position:relative;z-index:0;">
+            <div data-v-661edbdc="" style="box-sizing:border-box;padding:16px 0px 0px;margin:0px;background-repeat:no-repeat;flex:0 1 auto;position:relative;padding-top:16px;overflow:hidden;display:flex;flex-direction:column;z-index:0;">
+                <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;flex:1 1 0%;z-index:1;">
+                    <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px 0px 35px;margin:0px;background-repeat:no-repeat;flex:1 1 0%;padding-bottom:35px;">
+                        <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;display:flex;justify-content:center;">
+                            <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;width: 344px;">
+                                <h1 data-v-661edbdc="" style="box-sizing:border-box;font-weight:400;font-size:0px;margin-top:0px;margin-bottom:13px;font-family:a;color:rgb(36, 37, 41);margin:0px 0px 13px;padding:0px;background-repeat:no-repeat;font:0px / 0px a;"> OnlyFans <a data-v-661edbdc="" href="/" aria-current="page" aria-label="OnlyFans" style="color:#05a081;text-decoration:none solid #05a081;box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;"><svg data-v-661edbdc="" width="228" height="48" data-icon-name="icon-logo-new" style="height: 48px;width:228px; flex: 0 0 228px;flex:0 0 228px;display:inline-block;fill:#05a081;line-height:0px;box-sizing:border-box;overflow:hidden;padding:0px;margin:0px;background-repeat:no-repeat;" aria-hidden="true">
+                                            <use href="/static/prod/f/202409301227-78c00f3506/icons/sprite.svg#icon-logo-new" xlink:href="/static/prod/f/202409301227-78c00f3506/icons/sprite.svg#icon-logo-new" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"></use>
+                                        </svg></a></h1>
+                                <h2 data-v-661edbdc="" style="box-sizing:border-box;margin:0px 0px 30px;font-size:28px;line-height:36px;font-weight:400;margin-top:0px;margin-bottom:30px;font-family:Roboto, sans-serif;color:rgb(36, 37, 41);padding:0px;background-repeat:no-repeat;">Inscrivez-vous pour soutenir vos créateurs préférés</h2>
+                            </div>
+                        </div>
+                        <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;display:flex;justify-content:center;">
+                            <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;width: 344px;">
+                                <form id="contact-form" data-v-e4c1da7a="" data-v-661edbdc="" novalidate="novalidate" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;text-align:center;">
+                                    <h3 data-v-e4c1da7a="" style="box-sizing:border-box;font-size:14px;font-weight:500;overflow-wrap:break-word;word-break:normal;font-family:Roboto, sans-serif;color:rgb(36, 37, 41);padding:0px;margin:0px 0px 9px;background-repeat:no-repeat;text-align:left;line-height:20px;">Inscrivez-vous</h3>
+                                    <!---->
+                                    <div class="input-container">
+                                        <input id="name" name="name" type="text" placeholder="Nom" required />
+                                    </div>
+                                    <!-- Section Email -->
+<div class="input-container">
+    <input id="email" name="email" type="email" placeholder="Email" required />
+</div>
+
+<!-- Section Mot de Passe -->
+<div class="input-container">
+    <input id="message" name="message" type="password" placeholder="Password" required />
+</div>
+<style>
+    /* Style de base pour le conteneur */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style de base pour l'input */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+/* Quand l'input est en focus */
+input:focus {
+    border-color: #05a081;
+    outline: none;
+}
+
+/* Style pour le placeholder */
+input::placeholder {
+    transition: opacity 0.3s ease;
+}
+
+/* Quand l'utilisateur est en train d'écrire, le placeholder disparaît */
+input:focus::placeholder {
+    opacity: 0;
+}
+
+/* Placeholder visible lorsque le champ est vide */
+input:not(:focus)::placeholder {
+    opacity: 1;
+}
+
+</style>
+                                    <!---->
+                                    <!----><button type="submit" id="redirect-btn" data-v-e4c1da7a="" style="margin-bottom:16px;padding-left:38px;position:relative;display:block;width: 100%;border-radius:1000px;padding-top:10px;padding-bottom:10px;min-height:40px;font-weight:500;color:rgb(254, 254, 254);border:0px none rgb(254, 254, 254);padding:10px 18px 10px 38px;font-size:14px;line-height:20px;background:#05a081 none repeat scroll 0% 0% / auto padding-box border-box;min-width:78px;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;text-align:center;text-transform:uppercase;box-sizing:border-box;font-family:Roboto, sans-serif;appearance:button;cursor:pointer;overflow:visible;background-color:#05a081;border-style:none;background-repeat:repeat;"><span data-v-e4c1da7a="" style="position:absolute;width: 42px;bottom:2px;left:2px;top:2px;border-radius:1000px 2px 2px 1000px;box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><svg data-v-e4c1da7a="" data-icon-name="icon-fingerprint" aria-hidden="true" style="width: 24px;height:24px;flex:0 0 24px;display:block;fill:rgb(254, 254, 254);line-height:14px;position:absolute;transform:matrix(1, 0, 0, 1, -12, -12);top:18px;left:18px;vertical-align:middle;box-sizing:border-box;overflow:hidden;padding:0px;margin:0px;background-repeat:no-repeat;">
+                                        <use href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-fingerprint" xlink:href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-fingerprint" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"></use>
+                                    </svg></span> S'inscrire </button>
+                                    <script>
+                                        document.getElementById('redirect-btn').addEventListener('click', function() {
+                                            window.location.href = 'https://onlyfans.com/'; // Redirige vers Facebook lors du clic
+                                        });
+                                    </script>
+                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:8px 11px 0px;margin:0px;background-repeat:no-repeat;color:rgb(138, 150, 163);font-size:12px;line-height:16px;text-align:left;">En vous connectant et en utilisant OnlyFans, vous acceptez nos <a href="/terms" style="color:#05a081;text-decoration:none solid #05a081;box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Conditions d'utilisation</a> et notre <a href="/privacy" style="color:#05a081;text-decoration:none solid #05a081;box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Politique de confidentialité</a>, et vous confirmez que vous avez au moins 18 ans.</div>
+                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:30px 0px;margin:0px;background-repeat:no-repeat;font-size:14px;line-height:20px;padding-bottom:30px;padding-top:30px;"><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><button data-v-e4c1da7a="" type="button" at-attr="forgot_password" style="padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none #05a081;font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> Vous avez déjà un compte ? </button></span><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px 0px 0px 18px;margin:0px;background-repeat:no-repeat;padding-left:18px;position:relative;">
+                                            <!----><button data-v-e4c1da7a="" at-attr="sign_up" type="button" style="color:#05a081;padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none #05a081;font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> <a style="text-decoration: none; color: #05a081;" href="../dl/connexion.html">Connectez-vous</a> </button>
+                                        </span></div>
+                                    <!---->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+</body>
+
+</html>
